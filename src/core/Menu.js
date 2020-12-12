@@ -11,9 +11,10 @@ const currentTab = (history, path) => {
   }
 };
 
-const Menu = ({ history }) => (
-  <nav>
-    <div className="logo">AmazBay.</div>
+const Menu = ({ history }) => {
+  return(
+  <div className="navi">
+    <div className="logo"><Link to="/" style={{textDecoration:"none",color:"#FFF",opacity:"0.7"}}>AmazBay</Link></div>
     <ul>
       <li>
         <Link style={currentTab(history, "/")} to="/">
@@ -73,7 +74,10 @@ const Menu = ({ history }) => (
           </li>
           </Fragment>
       )}
-      {isAuthenticated() && (
+      
+    </ul>
+    <div className="search">
+    {isAuthenticated() && (
         <li>
           <span
           
@@ -87,12 +91,8 @@ const Menu = ({ history }) => (
           </span>
         </li>
       )}
-    </ul>
-    <div className="search">
-      <i className="fa fa-search"></i>
-      <i className="fa fa-shopping-basket"></i>
     </div>
-  </nav>
+  </div>
   // <div>
   //   <ul className="nav nav-tabs">
   //     <li className="nav-item">
@@ -169,6 +169,6 @@ const Menu = ({ history }) => (
   //     )}
   //   </ul>
   // </div>
-);
+          )};
 
 export default withRouter(Menu);
