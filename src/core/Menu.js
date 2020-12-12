@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth/helper";
 import "../styles.css";
-import "../core/card.css"
+
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#2ecc72" };
+    return { color: "#fe8033" };
   } else {
     return { color: "#FFFFFF" };
   }
@@ -13,7 +13,7 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => (
   <nav>
-    <div className="logo">Rayes.</div>
+    <div className="logo">AmazBay.</div>
     <ul>
       <li>
         <Link style={currentTab(history, "/")} to="/">

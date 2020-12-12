@@ -3,7 +3,6 @@ import "../styles.css"
 import Base from './Base'
 import Card from './Card'
 import { getAllProducts } from './helper/coreapicalls'
-import "./card.css"
 
 
 export default function Home() {
