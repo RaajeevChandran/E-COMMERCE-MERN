@@ -26,19 +26,19 @@ export default function Home() {
 
     return (
         <Base title="Home page" description="Essentials at your doorstep">
-            <div className="row text-center">
+            {/* <div className="row text-center">
                <h1 className="text-white">All of tshirts</h1>
-                <div className="row">
+                <div className="row"> */}
                     {products.map((product,index)=>{
                         return (
-                            <div className="col-4 mb-4" key={index}>
-                                <Card product={product}/>
-                            </div>
+                            // <div className="col-4 mb-4" key={index}>
+                                <Card key={index} product={product}/>
+                            // </div>
                         )
                         
                     })}
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
         </Base>
     )
 }

@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import ImageHelper from '../admin/helper/ImageHelper';
 import { Redirect } from 'react-router-dom';
 import { addItemToCart, removeItemFromCart } from './helper/CartHelper';
-
+import "./style.css"
 export default function Card
 (
   {
@@ -63,25 +63,39 @@ export default function Card
     }
     
     return (
-          <div className="card text-white bg-dark border border-info ">
-            <div className="card-header lead">{cardTitle}</div>
-            <div className="card-body">
-              {getRedirect(redirect)}
-              <ImageHelper product={product}/>
-              <p className="lead bg-success font-weight-normal text-wrap">
-                {cardDescription}
-              </p>
-    <p className="btn btn-success rounded  btn-sm px-4">${cardPrice}</p>
-              <div className="row">
-                <div className="col-12">
-                  {showAddToCart(addToCart)}
-                </div>
-                <div className="col-12">
-                  {showRemoveFromCart(removeFromCart)}
-                </div>
-              </div>
+    <div className="main-content">
+      <h3>T-Shirts</h3>
+      <div className="card">
+            <div className="card_img">
+              <img src={product} alt=''/>
             </div>
-          </div>
+            <div className="card_header">
+                <h2>{cardTitle}</h2>
+                <p>{cardDescription}</p>
+                <p className="price">{cardPrice}<span>$</span></p>
+                <div className="btn">Add to cart</div>
+            </div>
+        </div>
+        </div>
+    //       <div className="card text-white bg-dark border border-info ">
+    //         <div className="card-header lead">{cardTitle}</div>
+    //         <div className="card-body">
+    //           {getRedirect(redirect)}
+    //           <ImageHelper product={product}/>
+    //           <p className="lead bg-success font-weight-normal text-wrap">
+    //             {cardDescription}
+    //           </p>
+    // <p className="btn btn-success rounded  btn-sm px-4">${cardPrice}</p>
+    //           <div className="row">
+    //             <div className="col-12">
+    //               {showAddToCart(addToCart)}
+    //             </div>
+    //             <div className="col-12">
+    //               {showRemoveFromCart(removeFromCart)}
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
         );
       
     
