@@ -12,7 +12,7 @@
 
   .main_content {
     position: relative;
-    width: 70%;
+    width: 100%;
     height: 100%;
     margin: 50px auto;
     padding: 50px 0 0;
@@ -66,11 +66,11 @@
   }
   
   .main_content .cards .cards_header h2 {
-    font-size: 18px;
+    font-size: 24px;
   }
   
   .main_content .cards .cards_header p {
-    font-size: 14px;
+    font-size: 19px;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
     margin: 8px 0;
@@ -89,8 +89,8 @@
   
   .main_content .cards:hover {
     background-color: #2b3039;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     cursor: pointer;
   }
   

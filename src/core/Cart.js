@@ -22,6 +22,7 @@ export default function Cart() {
         return (
             <div>
                 <h2>This section is to load products</h2>
+                <div className="main_content">
                 {products.map((product,index)=>{
                    return ( <Card 
                     key={index}
@@ -32,6 +33,7 @@ export default function Cart() {
                     reload={reload}
                     />)
                 })}
+                </div>
             </div>
         )
     }

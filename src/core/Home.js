@@ -3,7 +3,7 @@ import "../styles.css"
 import Base from './Base'
 import Card from './Card'
 import { getAllProducts } from './helper/coreapicalls'
-
+import "./card.css"
 
 
 export default function Home() {
@@ -29,6 +29,8 @@ export default function Home() {
             {/* <div className="row text-center">
                <h1 className="text-white">All of tshirts</h1>
                 <div className="row"> */}
+                <div className="main_content">
+                    {/* <h3>T-SHIRTS</h3> */}
                     {products.map((product,index)=>{
                         console.log(product)
                         return (
@@ -40,6 +42,7 @@ export default function Home() {
                     })}
                 {/* </div>
             </div> */}
+            </div>
         </Base>
     )
 }

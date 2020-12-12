@@ -38,7 +38,7 @@ export default function Card
           addToCart && (
             <button
                     onClick={addtoCart}
-                    className="btn btn-block btn-outline-success mt-2 mb-2"
+                    className="btn"
                   >
                     Add to Cart
                   </button>
@@ -54,7 +54,7 @@ export default function Card
                       removeItemFromCart(product._id)
                       setReload(!reload)
                     }}
-                    className="btn btn-block btn-outline-danger mt-2 mb-2"
+                    className="btn"
                   >
                     Remove from cart
                   </button>
@@ -66,20 +66,21 @@ export default function Card
     
 
     return (
-    <div className="main_content">
-      <h3>T-Shirts</h3>
+    
       <div className="cards">
             <div className="cards_img">
+            {getRedirect(redirect)}
             <ImageHelper product={product}/>
             </div>
             <div className="cards_header">
                 <h2>{cardTitle}</h2>
                 <p>{cardDescription}</p>
                 <p className="price">{cardPrice}<span>$</span></p>
-                <div className="btn">Add to cart</div>
+                {showAddToCart(addToCart)}
+                {showRemoveFromCart(removeFromCart)}
             </div>
         </div>
-        </div>
+       
     //       <div className="card text-white bg-dark border border-info ">
     //         <div className="card-header lead">{cardTitle}</div>
     //         <div className="card-body">
