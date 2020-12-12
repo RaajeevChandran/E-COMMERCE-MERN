@@ -20,7 +20,8 @@ export default function Base({
 
             </div>
             <div className="footers">
-            <p>copyright @2020</p>
+            <p>Snag all the ones you love!</p>
+            {/* <p>copyright @2020</p> */}
             {/* <div className="social">
                 <i className="fa fa-facebook"></i>
                 <i className="fa fa-instagram"></i>
