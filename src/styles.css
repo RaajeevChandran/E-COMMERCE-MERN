@@ -39,12 +39,14 @@ html,body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  
 }
 
 .navi ul li {
   font-size: 14px;
   margin-left: 15px;
   padding: 20px;
+  
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: rgba(255, 255, 255, 0.7);
@@ -53,15 +55,12 @@ html,body {
 
 .navi .search {
   color: rgba(255, 255, 255, 0.7);
-}
-
-.navi .search .fa {
   cursor: pointer;
+  margin-left: 15px;
+
 }
 
-.navi .search .fa + .fa {
-  margin-left: 15px;
-}
+
 
 
 
@@ -89,7 +88,7 @@ html,body {
 
 .main_content {
   position: relative;
-  width: 100%;
+  width: 70%;
   height: 100%;
   margin: 50px auto;
   padding: 50px 0 0;

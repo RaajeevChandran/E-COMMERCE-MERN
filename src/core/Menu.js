@@ -5,9 +5,9 @@ import "../styles.css";
 
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
-    return { color: "#fe8033" };
+    return { color: "#fe8033",textDecoration: "none" };
   } else {
-    return { color: "#FFFFFF" };
+    return { color: "#FFFFFF",textDecoration: "none" };
   }
 };
 
