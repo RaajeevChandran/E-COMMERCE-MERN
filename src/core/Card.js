@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import ImageHelper from '../admin/helper/ImageHelper';
 import { Redirect } from 'react-router-dom';
 import { addItemToCart, removeItemFromCart } from './helper/CartHelper';
-import "./card.css"
+
 export default function Card
 (
   {
