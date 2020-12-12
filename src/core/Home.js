@@ -30,6 +30,7 @@ export default function Home() {
                <h1 className="text-white">All of tshirts</h1>
                 <div className="row"> */}
                     {products.map((product,index)=>{
+                        console.log(product)
                         return (
                             // <div className="col-4 mb-4" key={index}>
                                 <Card key={index} product={product}/>

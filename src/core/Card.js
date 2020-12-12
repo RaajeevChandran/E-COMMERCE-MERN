@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import ImageHelper from '../admin/helper/ImageHelper';
 import { Redirect } from 'react-router-dom';
 import { addItemToCart, removeItemFromCart } from './helper/CartHelper';
-import "./style.css"
+import "./card.css"
 export default function Card
 (
   {
@@ -45,7 +45,7 @@ export default function Card
           )
         )
     }
-    
+    // console.log(product['name'])
     const showRemoveFromCart = removeFromCart => {
       return (
         removeFromCart && (
@@ -62,14 +62,17 @@ export default function Card
       )
     }
     
+    
+    
+
     return (
-    <div className="main-content">
+    <div className="main_content">
       <h3>T-Shirts</h3>
-      <div className="card">
-            <div className="card_img">
-              <img src={product} alt=''/>
+      <div className="cards">
+            <div className="cards_img">
+            <ImageHelper product={product}/>
             </div>
-            <div className="card_header">
+            <div className="cards_header">
                 <h2>{cardTitle}</h2>
                 <p>{cardDescription}</p>
                 <p className="price">{cardPrice}<span>$</span></p>

@@ -1,4 +1,4 @@
-.main_content, .main_content .card, .main_content .card .card_header, .btn{
+.main_content, .main_content .cards, .main_content .cards .cards_header, .btn{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -33,7 +33,7 @@
     font-size: 10.5vw;
   }
   
-  .main_content .card {
+  .main_content .cards {
     width: 30%;
     border-radius: 15px;
     -webkit-box-orient: vertical;
@@ -48,15 +48,15 @@
     margin-bottom: 50px;
   }
   
-  .main_content .card .card_img {
+  .main_content .cards .cards_img {
     margin-top: -5vw;
   }
   
-  .main_content .card .card_img img {
+  .main_content .cards .cards_img img {
     width: 200px;
   }
   
-  .main_content .card .card_header {
+  .main_content .cards .cards_header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -65,36 +65,36 @@
     margin: 25px 0;
   }
   
-  .main_content .card .card_header h2 {
+  .main_content .cards .cards_header h2 {
     font-size: 18px;
   }
   
-  .main_content .card .card_header p {
+  .main_content .cards .cards_header p {
     font-size: 14px;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
     margin: 8px 0;
   }
   
-  .main_content .card .card_header .price {
+  .main_content .cards .cards_header .price {
     font-size: 25px;
     color: #fe8033;
   }
   
-  .main_content .card .card_header .price span {
+  .main_content .cards .cards_header .price span {
     font-size: 15px;
     display: inline-block;
     vertical-align: top;
   }
   
-  .main_content .card:hover {
+  .main_content .cards:hover {
     background-color: #2b3039;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     cursor: pointer;
   }
   
-  .main_content .card:hover .btn {
+  .main_content .cards:hover .btn {
     background-color: #fe8033;
     color: #fff;
   }
