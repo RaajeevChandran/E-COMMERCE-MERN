@@ -14,6 +14,7 @@ export default function Home() {
             if(data.error){
                 setError(data.error)
             }else{
+                
                 setProducts(data)
             }
         })
@@ -28,8 +29,10 @@ export default function Home() {
             {/* <div className="row text-center">
                <h1 className="text-white">All of tshirts</h1>
                 <div className="row"> */}
+                
                 <div className="main_content">
                     {/* <h3>T-SHIRTS</h3> */}
+                    
                     {products.map((product,index)=>{
                         console.log(product)
                         return (

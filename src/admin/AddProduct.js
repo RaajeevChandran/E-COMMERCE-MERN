@@ -74,6 +74,7 @@ export default function AddProduct() {
     }
 
     const successMessage = () => {
+      console.log('success')
         return (<div className="alert alert-success mt-3"
         style={{display : createdProduct ? "" : "none"}}>
         
