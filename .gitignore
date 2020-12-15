@@ -12,6 +12,11 @@
 /build
 
 # misc
+.idea/
+.vs/
+.pk
+.pem
+.pub
 .DS_Store
 .env
 .env.local
