@@ -10,7 +10,7 @@ export default function Card
   addToCart = true,
   removeFromCart=false,
   setReload=f => f,
-  function(f){return f}
+  // function(f){return f}
   reload=undefined
 }
 ) {

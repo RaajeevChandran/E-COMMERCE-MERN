@@ -12,8 +12,8 @@ router.get("/user/:userId",isSignedIn,isAuthenticated,getUser)
 router.get("/orders/user/:userId",isSignedIn,isAuthenticated,userPurchaseList)
 
 
-//Route to get all the users in the database.The controller method is commented as well
-// router.get("/users",getAllUsers)
+// Route to get all the users in the database.The controller method is commented as well
+router.get("/users",getAllUsers)
 
 
 

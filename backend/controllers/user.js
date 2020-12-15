@@ -92,13 +92,13 @@ exports.pushOrderInPurchaseList = (req,res,next)=>{
 
 
 //IN order to get the json of all the users in the database
-// exports.getAllUsers = (req,res)=>{
-//     User.find().exec((err,users)=>{
-//         if(err||!users){
-//             return res.status(400).json({
-//                  error:"NO USERS FOUND"
-//             })
-//         }
-//         res.json(users)
-//     })
-// }
+exports.getAllUsers = (req,res)=>{
+    User.find().exec((err,users)=>{
+        if(err||!users){
+            return res.status(400).json({
+                 error:"NO USERS FOUND"
+            })
+        }
+        res.json(users)
+    })
+}

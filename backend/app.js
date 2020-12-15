@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+// const MongoClient = require("mongodb").MongoClient;
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
@@ -17,7 +18,7 @@ const orderRoutes = require("./routes/order")
 const stripeRoutes = require("./routes/stripePayment")
 // const paypalRoute = require("./routes/paypalRoute")
 
-//DB Connection
+// DB Connection
 mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
@@ -27,6 +28,11 @@ mongoose
   .then(() => {
     console.log("DB CONNECTED");
   }).catch(err => console.log("DB not connected"))
+
+// const uri = "mongodb+srv://rcn:waytogorcn@quiz.acs4v.mongodb.net/mern?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true ,useUnifiedTopology: true});
+// client.connect().then(()=>console.log("DB CONNECTED")).catch(err=>console.log("DB NOT CONNECTED"));
+
 
 //Middlewares
 app.use(bodyParser.json());
