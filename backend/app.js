@@ -28,7 +28,7 @@ mongoose
     console.log("DB CONNECTED");
   }).catch(err => console.log("DB not connected"))
 
-// const uri = "mongodb+srv://rcn:<password>.acs4v.mongodb.net/mern?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://rcn:<password>@quiz.acs4v.mongodb.net/mern?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, { useNewUrlParser: true ,useUnifiedTopology: true});
 // client.connect().then(()=>console.log("DB CONNECTED")).catch(err=>console.log("DB NOT CONNECTED"));
 
