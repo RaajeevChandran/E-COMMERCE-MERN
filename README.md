@@ -21,7 +21,8 @@ A Full-Stack e-commerce website which lets users create an account and buy produ
 4. Integrated the application with Stripe payment gateway.
 
 ### `TO-DO's`
-1. Making the site entirely responsive.
-2. Create more categories of products.
-3. Enhance user engagement with vivid front-end magic.
+1. Improve the overall UI of the website.
+2. Making the site entirely responsive.
+3. Create more categories of products.
+4. Enhance user engagement with vivid front-end magic.
 
