@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Base from '../core/Base'
 import {Link} from 'react-router-dom'
 import {signup} from "../auth/helper"
+import { firebaseAnalytics } from '../firebaseConfig'
 
 export default function Signup(){
 
@@ -13,6 +14,9 @@ export default function Signup(){
         success:false
     })
 
+    useEffect(() => {
+       firebaseAnalytics.logEvent('visited_sign_up')
+    }, [])
     const {name,email,password,error,success} = values
 
     const handleChange = name => event => {

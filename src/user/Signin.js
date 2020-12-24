@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import Base from '../core/Base'
 import {Redirect} from 'react-router-dom'
 import {signin,authenticate, isAuthenticated} from "../auth/helper"
+import { firebaseAnalytics } from '../firebaseConfig'
 export default function Signin(){
 
     const [values,setValues] = useState({
@@ -11,6 +12,12 @@ export default function Signin(){
         loading:false,
         didRedirect:false
     })
+
+    useEffect(() => {
+     
+            firebaseAnalytics.logEvent("visited_sign_in")
+         
+    }, [])
 
     const {email,password,error,loading,didRedirect} = values;
     const {user} = isAuthenticated();

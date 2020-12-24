@@ -30,5 +30,5 @@ yarn-error.log*
 src/firebaseConfig.js
 src/firebase.json
 .firebase/hosting.YnVpbGQ.cache
-.firebaserc
 firebase.json
+.firebaserc
