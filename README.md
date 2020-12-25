@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# AMAZBAY 
 
-In the project directory, you can run:
+A MERN STACK E-COMMERCE PROJECT
 
-### `npm start`
+[Click here to see it in Live Action!](https://amazbay-37f78.firebaseapp.com)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `OVERVIEW`
+A Full-Stack e-commerce website which lets users create an account and buy products by adding it to their cart.The boilerplate for the admin dashboard is all done and all users who sign up absolutely end up being a normal user. I've incorporated Stripe as the payment gateway after the product further proceeds to be placed as an order (just clickbait stuff doesn't process a real payment though). Got myself familairized in playing with the browser cookies and JSON web tokens (jwt).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `TECH STACK`
+1. Front-End : React
+2. Back-End : Node and Express (Hosted on Heroku)
+3. Database : MongoDB (Hosted on MongoDB Atlas Cluster)
+4. Website Hosting : Firebase
 
-### `npm test`
+### `BACKLOGS DONE SO FAR`
+1. Channelising users as Administrators and Normal Users.Different Dashboard Pages for the latter as well.
+2. Administrator accounts are granted the privileges of all CRUD operations with the production database like adding a product or category, managing products, categories or orders etc.
+3. Added teeny-tiny user interactions to the front-end.
+4. Integrated the application with Stripe payment gateway.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `TO-DO's`
+1. Improve the overall UI of the website.
+2. Making the site entirely responsive.
+3. Create more categories of products.
+4. Enhance user engagement with vivid front-end magic.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
