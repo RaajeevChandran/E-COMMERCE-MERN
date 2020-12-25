@@ -36,7 +36,7 @@ export default function Home() {
                     {loading ? <Loading/> : null}
                     {/* <Loading/> */}
                     {products.map((product,index)=>{
-                        console.log(product)
+                        // console.log(product)
                         return (
                             // <div className="col-4 mb-4" key={index}>
                                 <Card key={index} product={product}/>
