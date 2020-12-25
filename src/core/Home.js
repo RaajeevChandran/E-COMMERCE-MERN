@@ -3,12 +3,12 @@ import "../styles.css"
 import Base from './Base'
 import Card from './Card'
 import { getAllProducts } from './helper/coreapicalls'
-
+import Loading from "./Loading"
 
 export default function Home() {
     const [products, setProducts] = useState([])
     const [error, setError] = useState(false)
-
+    const [loading,setLoading] = useState(true)
     const loadAllProducts = () => {
         getAllProducts().then(data => {
             if(data.error){
@@ -16,6 +16,7 @@ export default function Home() {
             }else{
                 
                 setProducts(data)
+                setLoading(false)
             }
         })
     }
@@ -32,7 +33,8 @@ export default function Home() {
                 
                 <div className="main_content">
                     {/* <h3>T-SHIRTS</h3> */}
-                    
+                    {loading ? <Loading/> : null}
+                    {/* <Loading/> */}
                     {products.map((product,index)=>{
                         console.log(product)
                         return (
