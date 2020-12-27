@@ -10,7 +10,7 @@ export default function Base({
     return (
         <div>
             <Menu/>
-            <div className="container">
+            <div className="containe">
                 {/* <div className="jumbotron text-white text-center">
                     <h2 className="display-4">{title}</h2>
                     <p className="lead">{description}</p>
