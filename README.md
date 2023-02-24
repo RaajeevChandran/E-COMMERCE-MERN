@@ -3,7 +3,6 @@
 
 A MERN STACK E-COMMERCE PROJECT
 
-[Click here to see it in Live Action!](https://amazbay-37f78.firebaseapp.com)
 
 ### `OVERVIEW`
 A Full-Stack e-commerce website which lets users create an account and buy products by adding it to their cart.The boilerplate for the admin dashboard is all done and all users who sign up absolutely end up being a normal user. I've incorporated Stripe as the payment gateway after the product further proceeds to be placed as an order (just clickbait stuff doesn't process a real payment though). Got myself familairized in playing with the browser cookies and JSON web tokens (jwt).
